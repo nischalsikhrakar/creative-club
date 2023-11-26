@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Event</title>
+
+    <!-- Swiper css link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts-->
+    <section class="header">
+      <a href="home.html" class="logo">creative club</a>
+      <nav class="navbar">
+        <!-- <a href="home.html">home</a>
+        <a href="about.html">about</a>
+        <a href="events.html">events</a>
+        <a href="blog.html">blog</a> -->
+
+        <!-- <div class="close-nav-menu">
+        <img src="img/close.svg" alt="close" />
+      </div> -->
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="home.html">home</a>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a href="#" data-toggle="sub-menu">about<i class="plus"></i></a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="about.html">about us</a></li>
+              <li class="menu-item"><a href="team.html">our team</a></li>
+              <li class="menu-item">
+                <a href="infrastructure.html">club infrastructure</a>
+              </li>
+              <li class="menu-item"><a href="notices.html">club notices</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="events.html">events</a>
+          </li>
+          <li class="menu-item">
+            <a href="blog.html">blog</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+    <!-- header section ends -->
+
+    <div
+      class="heading"
+      style="background: url(/img/header-bg-3.png) no-repeat"
+    >
+      <h1>book</h1>
+    </div>
+
+    <!-- booking section starts -->
+    <section class="booking">
+      <h1 class="heading-title">book you seat now!</h1>
+      <form action="book_form.html" method="post" class="book-form">
+        <div class="flex">
+          <div class="inputBox">
+            <span>name: </span>
+            <input type="text" placeholder="Enter your name" name="name" />
+          </div>
+          <div class="inputBox">
+            <span>email: </span>
+            <input type="email" placeholder="Enter your email" name="email" />
+          </div>
+          <div class="inputBox">
+            <span>phone: </span>
+            <input type="number" placeholder="Enter your number" name="phone" />
+          </div>
+          <div class="inputBox">
+            <span>address: </span>
+            <input
+              type="text"
+              placeholder="Enter your address"
+              name="address"
+            />
+          </div>
+          <div class="inputBox">
+            <span>faculty: </span>
+            <!-- <input
+              type="text"
+              placeholder="enter your faculty"
+              name="faculty"
+            /> -->
+            <select name="dropdown" class="list">
+              <option value="BSCIT" selected>BSC. IT</option>
+              <option value="BBA">BBA</option>
+              <option value="BBM">BBM</option>
+            </select>
+          </div>
+          <div class="inputBox">
+            <span>semester: </span>
+            <!-- <input
+              type="number"
+              placeholder="enter your semester"
+              name="semester"
+            /> -->
+            <select name="dropdown" class="list">
+              <option value="First Semester" selected>First Semester</option>
+              <option value="Second Semester">Second Semester</option>
+              <option value="Third Semester">Third Semester</option>
+              <option value="Fourth Semester">Fourth Semester</option>
+              <option value="Fifth Semester">Fifth Semester</option>
+              <option value="Sixth Semester">Sixth Semester</option>
+            </select>
+          </div>
+        </div>
+        <input type="submit" value="submit" class="btn" name="send" />
+      </form>
+    </section>
+    <!-- booking section ends -->
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="home.html"><i class="fas fa-angle-right"></i> home</a>
+          <a href="about.html"><i class="fas fa-angle-right"></i> about</a>
+          <a href="events.html"><i class="fas fa-angle-right"></i> events</a>
+          <a href="blog.html"><i class="fas fa-angle-right"></i> blog</a>
+        </div>
+
+        <div class="box">
+          <h3>extra links</h3>
+          <a href="#"><i class="fas fa-angle-right"></i> ask questions</a>
+          <a href="#"><i class="fas fa-angle-right"></i> about us</a>
+          <a href="#"><i class="fas fa-angle-right"></i> privacy policy</a>
+          <a href="#"><i class="fas fa-angle-right"></i> terms of use</a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#"><i class="fas fa-phone"></i>+977-986-190-1619</a>
+          <a href="#"><i class="fas fa-phone"></i>+977-245-123-1234</a>
+          <a href="#"
+            ><i class="fas fa-envelope"></i>creativeclub22@gmail.com</a
+          >
+          <a href="#"
+            ><i class="fas fa-map"></i>maitidevi-30, kathmandu, nepal</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#"><i class="fab fa-facebook"></i>facebook</a>
+          <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+          <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+          <a href="#"><i class="fab fa-youtube"></i>youtube</a>
+        </div>
+      </div>
+
+      <div class="credit">
+        created by <span>team nischal</span> | all rights reserved!|
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="/js/script.js"></script>
+  </body>
+</html>
